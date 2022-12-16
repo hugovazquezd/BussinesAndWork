@@ -1,0 +1,98 @@
+@import "../Formato/main.css";
+@import "../Composiciones/carrusel.css";
+
+/** CONFIGURACIÓN GENERAL **/
+* {
+    box-sizing: border-box;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 5.1rem;
+    transition: 0.8s ease;
+    opacity: 0;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+}
+
+h2 {
+    margin-top: 80px;
+}
+
+.texto {
+    color: white;
+    padding: 10px 0 10px 0;
+}
+
+/** IMÁGENES **/
+.foto {
+    max-width: 100%;
+    width: 40vw;
+    min-width: 30rem;
+}
+
+.galeriaImagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+img:hover {
+    opacity: 100%;
+}
+
+img {
+    opacity: 70%;
+    width: 100%;
+}
+
+.imagen {
+    max-width: 22vw;
+    min-width: 20rem;
+    width: 100%;
+}
+
+.colImagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.filaImagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/***********************************************************/
+
+/* AJUSTES  GENERALES*/
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.Cuadro {
+    border-radius: 16px;
+    max-width: 48rem;
+    width: 40vw;
+    min-width: 30rem;
+    min-height: 10rem;
+    resize: none;
+    background: var(--color-verdoso-claro);
+    text-align: justify;
+    padding: 1vw 1vw 1vw 1vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    font-size: 15px;
+}
+
+.boton {
+    margin-top: 20px;
+}
+
+/***********************************************************/

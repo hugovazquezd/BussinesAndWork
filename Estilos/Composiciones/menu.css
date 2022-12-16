@@ -1,0 +1,123 @@
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(196, 214, 228, 1);
+    padding: 16px 29px 20px 30px;
+    width: 100%;
+    z-index: 2;
+}
+
+body { /*adaptación del cuerpo de la página*/
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+
+@media screen and (max-width: 1270px) {
+
+    .cabecera {
+        position: sticky;
+        padding: 0 0 0 0;
+        width: 100%;
+    }
+
+    .menu.cabecera.responsiva {
+        display: block;
+    }
+
+    .logo {
+        font-size: 16px;
+        margin: 0 20px 0 20px;
+    }
+
+    .cabecera a:not(.pequeño) {
+        display: none;
+    }
+
+    .menu.cabecera.responsiva a:not(.icon) {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .menu.cabecera.responsiva a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+}
+
+@media screen and (min-width: 1270px) {
+    .icon {
+        display: none;
+    }
+
+    .logo {
+        font-size: 18px;
+        margin: 0 20px 0 -10px;
+    }
+}
+
+/* DIFERENTES AJUSTES DEL MENÚ */
+
+a.menu {
+    color: black;
+    text-decoration: none;
+    font-family: Roboto, Arial, sans-serif;
+    padding: 20px 30px 20px 30px;
+    border-color: #2196F3;
+    font-size: 15px;
+}
+
+a.menu:hover {
+    color: black;
+    background-color: rgba(132, 175, 208, 0.82);
+    text-decoration: none;
+    font-family: Roboto, Arial, sans-serif;
+    padding: 20px 30px 20px 30px;
+    margin: 0;
+}
+
+a.menuActive {
+    color: black;
+    background-color: rgba(132, 175, 208, 0.82);
+    text-decoration: none;
+    font-family: Roboto, Arial, sans-serif;
+    padding: 21px 30px 20px 30px;
+    font-size: 15px;
+}
+
+a.link1:link, a.link1:visited {
+    color: black;
+    text-decoration: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 42px;
+}
+
+a.link1:hover, a.link1:active {
+    color: grey;
+    text-decoration: none;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+.derecha {
+    margin-right: 15px;
+}
+
+a.menu.derecha:hover {
+    margin-right: 15px;
+}
+

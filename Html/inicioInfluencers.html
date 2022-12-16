@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=3.0, minimum-scale=0.5">
+    <meta name="keywords" content="influencers, empresas, colaboracion, publicidad">
+    <meta name="description" content="Date a conocer en las redes sociales o mejora tu rendimiento como empresa gracias
+    a los servicios de community manager ofrecidos por Business and Work">
+    <link rel="stylesheet" href="../Estilos/Paginas/inicioInfluencers.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="../Scripts/jquery-3.6.0.js" type="text/javascript"></script>
+    <script src="../Scripts/Chart.bundle.min.js"></script>
+    <!--<link rel="stylesheet" href="https://fontawesome.com/icons/caret-down?s=thin">-->
+    <title>Business & Work</title>
+</head>
+<body>
+<!--SECCIÓN SUPERIOR-->
+<header class="menu cabecera" id="myTopnav">
+    <!--REFERENCIAS A PÁGINAS EXTERNAS-->
+    <div>
+        <a class="pequeño logo"><i id="ocultar" class="fa fa-camera-retro"></i></a>
+        <a class="menuActive pequeño" href="../index.html">INICIO</a>
+        <a class="menu" href="influencers.html">INFLUENCERS</a>
+        <a class="menu" href="empresas.html">EMPRESAS</a>
+        <a class="menu" href="noticias.html">NOTICIAS</a>
+        <a class="menu" href="consejos.html">CONSEJOS</a>
+        <a class="menu" href="opiniones.html">OPINIONES</a>
+    </div>
+    <div>
+        <a class="menu derecha" href="registrarse.html">REGISTRARSE</a>
+        <a class="menu derecha" href="inicioSesion.html">INICIAR SESIÓN</a>
+    </div>
+    <a class="menu pequeño icon" onclick="menuResponsivo()"><i class="fa fa-bars"></i></a>
+
+</header>
+<main>
+    <h1 id="titulo" class="tittle">BUSINESS & WORK</h1>
+    <section>
+        <!--SECCIÓN 1-->
+        <button class="accordion primera impar">MIS PROMOCIONES</button>
+        <div class="bloque enFila">
+            <form class="listaEmpresas">
+                <label class="eImpar">
+                    <input type="radio" value="e1">USUARIO 1
+                </label>
+                <label class="ePar">
+                    <input type="radio" value="e2">USUARIO 2
+                </label>
+                <label class="eImpar">
+                    <input type="radio" value="e3">USUARIO 3
+                </label>
+                <label class="ePar">
+                    <input type="radio" value="e4">USUARIO 4
+                </label>
+                <label class="eImpar">
+                    <input type="radio" value="e5">USUARIO 5
+                </label>
+            </form>
+            <div class="enColumna nubes">
+                <h2>NOMBRE INFLUENCER</h2>
+                <p>Ventajas </p>
+                <p class="Cuadro"> Texto</p>
+                <p>Fecha de expiración: </p>
+                <p class="Cuadro">DD/MM/YYYY </p>
+                <button class="boton" id="finalizada">
+                    Definir como finalizada
+                </button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <button class="accordion par">NUEVAS SOLICITUDES</button>
+        <div class="bloque enFila">
+            <form class="listaEmpresas">
+                <label class="eImpar">
+                    <input type="radio" value="e1">EMPRESA 1
+                </label>
+                <label class="ePar">
+                    <input type="radio" value="e2">EMPRESA 2
+                </label>
+                <label class="eImpar">
+                    <input type="radio" value="e3">EMPRESA 3
+                </label>
+                <label class="ePar">
+                    <input type="radio" value="e4">EMPRESA 4
+                </label>
+                <label class="eImpar">
+                    <input type="radio" value="e5">EMPRESA 5
+                </label>
+            </form>
+            <div class="enColumna nubes">
+                <h2>NOMBRE EMPRESA</h2>
+                <p class="Cuadro" id="cambiaTam">
+                    ¡WELCOME TO MYAGLEET!
+                    Encuentra tus modelos favoritos de esta nueva temporada PVR-VRN.
+                    Botas, botines, deportivas y mucho más...
+                    Todos nuestros zapatos respetan el bienestar animal, están fabricados con materiales CrueltyFree.
+                    Con nuestros envíos gratis en 24h...¡ELIGE HOY Y ESTRENA MAÑANA!
+                </p>
+                <div class="enFila dist">
+                    <input class="boton" id="ac" type="button" value="Aceptar">
+                    <input class="boton" id="re" type="button" value="Rechazar">
+                    <input class="boton" id="ca" type="button" value="Cancelar">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <button class="accordion impar">CALENDARIO</button>
+        <div class="bloque calendario">
+            <div class="enColumna izda">
+                <div class="enColumna">
+                    <ul class="enFila control">
+                        <li id="anterior"><i class="fa fa-chevron-circle-left"></i></li>
+                        <li id="mes">Marzo</li>
+                        <li id="ano">2022</li>
+                        <li id="siguiente"><i class="fa fa-chevron-circle-right"></i></li>
+                    </ul>
+                </div>
+                <div id="dias" class="enColumna">
+                    <ul class="enFila sB">
+                        <li class="cal">L</li>
+                        <li class="cal">M</li>
+                        <li class="cal">Mi</li>
+                        <li class="cal">J</li>
+                        <li class="cal">V</li>
+                        <li class="cal">S</li>
+                        <li class="cal">D</li>
+                    </ul>
+                    <ul class="enFila sB">
+                        <li class="celdaCalendario cal"></li>
+                        <li class="celdaCalendario cal dia">1</li>
+                        <li class="celdaCalendario cal dia">2</li>
+                        <li class="celdaCalendario cal  dia">3</li>
+                        <li class="celdaCalendario cal dia">4</li>
+                        <li class="celdaCalendario cal dia">5</li>
+                        <li class="celdaCalendario cal dia">6</li>
+                    </ul>
+                    <ul class="enFila sB">
+                        <li class="celdaCalendario cal dia">7</li>
+                        <li class="celdaCalendario cal dia">8</li>
+                        <li class="celdaCalendario cal dia">9</li>
+                        <li class="celdaCalendario cal dia">10</li>
+                        <li class="celdaCalendario cal dia">11</li>
+                        <li class="celdaCalendario cal dia">12</li>
+                        <li class="celdaCalendario cal dia">13</li>
+                    </ul>
+                    <ul class="enFila sB">
+                        <li class="celdaCalendario cal dia">14</li>
+                        <li class="celdaCalendario cal dia">15</li>
+                        <li class="celdaCalendario cal dia">16</li>
+                        <li class="celdaCalendario cal dia">17</li>
+                        <li class="celdaCalendario cal dia">18</li>
+                        <li class="celdaCalendario cal dia">19</li>
+                        <li class="celdaCalendario cal dia">20</li>
+                    </ul>
+                    <ul class="enFila sB">
+                        <li class="celdaCalendario cal dia">21</li>
+                        <li class="celdaCalendario cal dia">22</li>
+                        <li class="celdaCalendario cal dia">23</li>
+                        <li class="celdaCalendario cal dia">24</li>
+                        <li class="celdaCalendario cal dia">25</li>
+                        <li class="celdaCalendario cal dia">26</li>
+                        <li class="celdaCalendario cal dia activo">27</li>
+                    </ul>
+                    <ul class="enFila sB">
+                        <li class="celdaCalendario cal dia">28</li>
+                        <li class="celdaCalendario cal dia">29</li>
+                        <li class="celdaCalendario cal dia">30</li>
+                        <li class="celdaCalendario cal dia">31</li>
+                        <li class="celdaCalendario cal"></li>
+                        <li class="celdaCalendario cal"></li>
+                        <li class="celdaCalendario cal"></li>
+                    </ul>
+                    <ul class="enFila sB">
+                        <li class="celdaCalendario cal"></li>
+                        <li class="celdaCalendario cal"></li>
+                        <li class="celdaCalendario cal"></li>
+                        <li class="celdaCalendario cal"></li>
+                        <li class="celdaCalendario cal"></li>
+                        <li class="celdaCalendario cal"></li>
+                        <li class="celdaCalendario cal"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dcha" id="raya">
+                <p class="calDato">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    ACCIÓN
+                </p>
+                <p class="Cuadro" id="titEvento">Nombre evento</p>
+                <p class="calDato">
+                    <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                    EVENTO DESCRITO
+                </p>
+                <p id="descEvento" class="Cuadro">Descripcion</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <button class="accordion par">ANÁLISIS DE ACTIVIDAD</button> <!--METER DE BLOQUE-->
+        <div class="bloque enFila">
+            <div class="izda">
+                <p id="red">
+                    <i class="fa fa-instagram"></i>
+                    &nbsp RED SOCIAL
+                </p>
+                <label>
+                    <select name="chartType" id="chartType" class="custom-select"
+                            onchange="actualizaGrafica(this.value)">
+                        <option value="grafica1">Instagram</option>
+                        <option value="grafica2"> 21Buttons</option>
+                        <option value="grafica3">Twitter</option>
+                    </select>
+                </label>
+                <canvas id="grafica1" style="display:block;"></canvas>
+                <canvas id="grafica2" style="display:none;"></canvas>
+                <canvas id="grafica3" style="display:none;"></canvas>
+            </div>
+            <div class="dcha">
+                <p class="textos"><b>SEGUIDORES GANADOS:</b> 120K</p>
+                <p class="textos"><b>SEGUIDORES PERDIDOS:</b> 863K</p>
+                <p class="textos"><b>INTERACCIÓN:</b></p>
+                <table>
+                    <tr>
+                        <th>LIKES</th>
+                        <th>COMMENTS</th>
+                        <th>SHARES</th>
+                    </tr>
+                    <tr>
+                        <td>1024</td>
+                        <td>203</td>
+                        <td>93</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="../Scripts/menu.js"></script>
+<script src="../Scripts/acordeon.js"></script>
+<script src="../Scripts/calendario.js"></script>
+<script src="../Scripts/grafica.js"></script>
+<script src="../Scripts/cargaEventos.js"></script>
+</body>
+<footer>
+    <p> ©️2022 Business and Work</p>
+</footer>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=3.0, minimum-scale=0.5">
+    <meta name="keywords" content="influencers, empresas, colaboracion, publicidad">
+    <meta name="description" content="Date a conocer en las redes sociales o mejora tu rendimiento como empresa gracias
+    a los servicios de community manager ofrecidos por Business and Work">
+    <link rel="stylesheet" href="../Estilos/Paginas/influencers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>EMPRESAS</title>
+</head>
+<body>
+<header class="menu cabecera" id="myTopnav">
+    <!--REFERENCIAS A PÁGINAS EXTERNAS-->
+    <div>
+        <a class="pequeño logo"><i id="ocultar" class="fa fa-camera-retro"></i></a>
+        <a class="menu" href="../index.html">INICIO</a>
+        <a class="menu" href="influencers.html">INFLUENCERS</a>
+        <a class="menuActive pequeño" href="empresas.html">EMPRESAS</a>
+        <a class="menu" href="noticias.html">NOTICIAS</a>
+        <a class="menu" href="consejos.html">CONSEJOS</a>
+        <a class="menu" href="opiniones.html">OPINIONES</a>
+    </div>
+    <div>
+        <a class="menu derecha" href="registrarse.html">REGISTRARSE</a>
+        <a class="menu derecha" href="inicioSesion.html">INICIAR SESIÓN</a>
+    </div>
+    <a class="menu pequeño icon" onclick="menuResponsivo()"><i class="fa fa-bars"></i></a>
+
+</header>
+<main>
+    <section>
+        <h2>DESCUBRIR</h2>
+        <div class="central">
+            <div class="carrusel">
+                <a href="empresasExtendido.html">
+                    <figure>
+                        <img class="foto" src="../Imagenes/Empresas/empresa1.jpg" alt="imagen empresa 1">
+                    </figure>
+                </a>
+                <div class="informacion">
+                    <h2>Nombre de la empresa 1</h2>
+                    <p>
+                        Explicación asociada a la empresa con información de interés
+                        que esta quiera hacer destacar.
+                    </p>
+                </div>
+            </div>
+            <div class="carrusel">
+                <a href="empresasExtendido.html">
+                    <figure>
+                        <img class="foto" src="../Imagenes/Empresas/empresa3.jpg" alt="imagen empresa 2">
+                    </figure>
+                </a>
+                <div class="informacion">
+                    <h2>Nombre de la empresa 2</h2>
+                    <p>
+                        Explicación asociada al influencer con información de interés que este quiera hacer
+                        destacar.
+                    </p>
+                </div>
+            </div>
+            <div class="carrusel">
+                <a href="empresasExtendido.html">
+                    <figure>
+                        <img class="foto" src="../Imagenes/Empresas/empresa4.jpg"
+                             alt="imagen empresa 3">
+                    </figure>
+                </a>
+                <div class="informacion">
+                    <h2>Nombre de la empresa 3</h2>
+                    <p>
+                        Explicación asociada al influencer con información de interés que este quiera hacer
+                        destacar.
+                    </p>
+                </div>
+            </div>
+            <!-- circulos y flechas -->
+            <div>
+                <a class="flecha" onclick="anterior(0)">&#10094;</a>
+                <span class="circulo" onclick="mostrar(0,0)"></span>
+                <span class="circulo" onclick="mostrar(0,1)"></span>
+                <span class="circulo" onclick="mostrar(0,2)"></span>
+                <a class="flecha" onclick="siguiente(0)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+    <h2>EMPRESAS DESTACADAS</h2>
+    <div class="filaImagenes galeriaImagenes">
+        <div class="central">
+            <figure class="imagen empDest">
+                <a href="empresasExtendido.html">
+                    <img src="../Imagenes/Empresas/empresa3.jpg" alt="icono de slack">
+                </a>
+            </figure>
+            <figure class="imagen empDest">
+                <a href="empresasExtendido.html">
+                    <img src="../Imagenes/Empresas/empresa4.jpg" alt="icono de Chanel">
+                </a>
+            </figure>
+        </div>
+        <div class="central">
+            <figure class="imagen empDest">
+                <a href="empresasExtendido.html">
+                    <img src="../Imagenes/Empresas/empresa1.jpg" alt="icono de Tim Hortons">
+                </a>
+            </figure>
+
+            <figure class="imagen empDest">
+                <a href="empresasExtendido.html">
+                    <img src="../Imagenes/Empresas/empresa5.jpg" alt="icono de CocaCola">
+                </a>
+            </figure>
+
+        </div>
+    </div>
+</main>
+<script src="../Scripts/menu.js"></script>
+<script src="../Scripts/carrusel.js"></script>
+</body>
+<footer>
+    <p> ©️2022 Business and Work</p>
+</footer>
+</html>

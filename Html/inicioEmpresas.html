@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=3.0, minimum-scale=0.5">
+    <meta name="keywords" content="influencers, empresas, colaboracion, publicidad">
+    <meta name="description" content="Date a conocer en las redes sociales o mejora tu rendimiento como empresa gracias
+    a los servicios de community manager ofrecidos por Business and Work">
+    <link rel="stylesheet" href="../Estilos/Paginas/inicioInfluencers.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/caret-down?s=thin">
+    <script src="../Scripts/Chart.bundle.min.js"></script>
+    <script src="../Scripts/jquery-3.6.0.js" type="text/javascript"></script>
+    <title>Business & Work</title>
+</head>
+<body>
+<!--SECCIÓN SUPERIOR-->
+<header class="menu cabecera" id="myTopnav">
+    <!--REFERENCIAS A PÁGINAS EXTERNAS-->
+    <div>
+        <a class="pequeño logo"><i id="ocultar" class="fa fa-camera-retro"></i></a>
+        <a class="menuActive pequeño" href="../index.html">INICIO</a>
+        <a class="menu" href="influencers.html">INFLUENCERS</a>
+        <a class="menu" href="empresas.html">EMPRESAS</a>
+        <a class="menu" href="noticias.html">NOTICIAS</a>
+        <a class="menu" href="consejos.html">CONSEJOS</a>
+        <a class="menu" href="opiniones.html">OPINIONES</a>
+    </div>
+    <div>
+        <a class="menu derecha" href="registrarse.html">REGISTRARSE</a>
+        <a class="menu derecha" href="inicioSesion.html">INICIAR SESIÓN</a>
+    </div>
+    <a class="menu pequeño icon" onclick="menuResponsivo()"><i class="fa fa-bars"></i></a>
+
+</header>
+<main>
+    <h1 id="titulo" class="tittle">BUSINESS & WORK</h1>
+    <section>
+        <button class="accordion primera impar">NUEVAS SOLICITUDES</button>
+        <div class="bloque enFila">
+            <form class="listaEmpresas">
+                <label class="eImpar">
+                    <input type="radio" value="e1">USUARIO 1
+                </label>
+                <label class="ePar">
+                    <input type="radio" value="e2">USUARIO 2
+                </label>
+                <label class="eImpar">
+                    <input type="radio" value="e3">USUARIO 3
+                </label>
+                <label class="ePar">
+                    <input type="radio" value="e4">USUARIO 4
+                </label>
+                <label class="eImpar">
+                    <input type="radio" value="e5">USUARIO 5
+                </label>
+            </form>
+            <div class="enColumna nubes">
+                <h2>USUARIO</h2>
+                <p>Ventajas </p>
+                <p class="Cuadro"> Texto</p>
+                <p>Fecha de expiración: </p>
+                <p class="Cuadro">DD/MM/YYYY </p>
+                <button class="boton" id="finalizada">
+                    ENVIAR SOLICITUD
+                </button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <!--SECCIÓN 2-->
+        <button class="accordion par">PRODUCTOS OFERTADOS</button>
+        <div class="bloque enFila tam">
+            <figure class="untercio largo">
+                <img src="/Imagenes/Inicio/izda.jpg" class="tam" alt="nubes">
+            </figure>
+            <figure class="untercio dosfotos">
+                <img src="/Imagenes/Inicio/sobreMi_1.jpg" class="tam altoDos" alt="foto de comida">
+                <img src="/Imagenes/Inicio/sobreMi_1.jpg" class="tam altoDos" alt="foto de comida">
+            </figure>
+            <figure class="untercio largo">
+                <img src="/Imagenes/Inicio/derecha.jpg" class="tam" alt="cosa">
+            </figure>
+        </div>
+    </section>
+    <section>
+        <button class="accordion impar">ANÁLISIS DE ACTIVIDAD</button> <!--METER DE BLOQUE-->
+        <div class="bloque enFila">
+            <div class="izda">
+                <p id="red">
+                    <i class="fa fa-phone"></i> &nbsp IMPACTO SEGÚN INFLUENCER
+                </p>
+                <label>
+                    <select name="chartType" id="chartType" class="custom-select" onchange="cambiaGrafica(this.value)">
+                        <option value="graficaA">INFLUENCER 1</option>
+                        <option value="graficaB"> INFLUENCER 2</option>
+                        <option value="graficaC">INFLUENCER 3</option>
+                    </select>
+                </label>
+                <canvas id="graficaA" style="display:block;"></canvas>
+                <canvas id="graficaB" style="display:none;"></canvas>
+                <canvas id="graficaC" style="display:none;"></canvas>
+            </div>
+            <div class="dcha">
+                <p class="textos"><b>AUMENTO EN VENTAS:</b> 82%</p>
+                <p class="textos"><b>ÍNDICE DE VISITAS SEMANAL:</b> 5.3%</p>
+                <p class="textos"><b>N DE USUARIOS FRECUENTES:</b></p>
+                <table>
+                    <tr>
+                        <th>MAÑANA</th>
+                        <th>TARDE</th>
+                        <th>NOCHE</th>
+                    </tr>
+                    <tr>
+                        <td>893</td>
+                        <td>1044</td>
+                        <td>127</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="../Scripts/menu.js"></script>
+<script src="../Scripts/acordeon.js"></script>
+<script src="../Scripts/graficas1.js"></script>
+</body>
+<footer>
+    <p> ©️2022 Business and Work</p>
+</footer>
+</html>

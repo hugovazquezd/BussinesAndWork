@@ -1,0 +1,72 @@
+/*----PARA LA DISPOSICIÓN CENTRADA DE LOS ELEMENTOS----*/
+.central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+/*--------------------------------------------*/
+
+/*----FORMATO DEL CARRUSEL----*/
+.circulo:hover, input:hover, #si:hover, .flecha:hover {
+    background-color: var(--color-verdoso-claro);
+}
+
+.flecha {
+    color: black;
+    font-weight: bold;
+    padding: 0 5px 0 5px;
+}
+
+.circulo {
+    cursor: pointer;
+    height: 0.7vw;
+    width: 0.7vw;
+    min-height: 12px;
+    min-width: 12px;
+    background-color: var(--color-verdoso-oscuro);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circulo.actual {
+    background-color: var(--color-verdoso-claro);
+}
+
+/*----------------------------------------------------*/
+
+/*--------CUADRO DE TEXTO--------*/
+.formatoCuadro {
+    border-radius: 16px;
+    max-width: 100%;
+    min-width: 28rem;
+    width: 45vw;
+    min-height: 22rem;
+    resize: none;
+    background: var(--color-azul-uno);
+    padding: 1vw 1vw 1vw 4vw;
+    font-size: larger;
+}
+
+/*----------------------------------------------------*/
+
+/*--------BOTONES DE VOTACIÓN--------*/
+.boton {
+    background: var(--color-azul-dos);
+    border-radius: 16px;
+    height: 42px;
+    width: 14vw;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    min-width: 300px;
+}
+
+/*----------------------------------------------------*/
+

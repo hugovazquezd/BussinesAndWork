@@ -1,0 +1,95 @@
+@import "../Formato/main.css";
+@import "../Composiciones/carrusel.css";
+
+/*-------BARRA DE BÚSQUEDA-------*/
+.buscar {
+    position: relative;
+    margin-top: 100px;
+    display: flex; /*importante*/
+    flex-direction: row;
+    font-size: 30px;
+}
+
+#nombre {
+    margin-right: 10px;
+    max-width: 100%;
+    min-width: 26rem;
+    width: 36vw;
+    background: var(--color-verdoso-claro);
+    border-radius: 16px;
+}
+
+/*------------------------------------------------------------------*/
+
+/*------SECCIÓN DE OPINIONES------*/
+.Cuadro {
+    border-radius: 16px;
+    max-width: 28rem;
+    min-width: 6rem;
+    width: 25vw;
+    min-height: 10rem;
+    resize: none;
+    background: rgba(142, 202, 230, 0.46);
+    text-align: justify;
+    padding: 1vw 1vw 1vw 1vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.nosotros { /*ESTILO DE LA SECCIÓN SIN CÍRCULOS*/
+    display: flex;
+    flex-direction: row;
+}
+
+/*------------------------------------------------------------------*/
+
+/*----PEQUEÑAS ADAPTACIONES ESTÉTICAS AL ESTILO GLOBAL (CARRUSEL) ----*/
+@media screen and (min-width: 100px) and (max-width: 1215px ) {
+    .boton {
+        display: flex;
+        align-self: center;
+    }
+}
+
+#si {
+    background-color: var(--color-verdoso-oscuro);
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.circulo {
+    margin-top: 4px;
+}
+
+/*------------------------------------------------------------------*/
+
+/*----CONTROL DE LAS ESTRELLAS----*/
+.E {
+    font-size: 30px;
+    color: var(--color-verdoso-oscuro);
+}
+
+.estrellas {
+    margin-left: 1.4vw;
+}
+
+.E:hover {
+    opacity: 70%;
+}
+
+.amarilla {
+    color: rgba(253, 227, 150, 80);
+}
+/*-----------------------------------*/
+
+.estrella-rellena:before{content:"\f005"}
+
+.estrella-vacia:before{content:"\f006"}
+
+.estrella-rellena-hover:before{content:"\f005"}
+
+.estrella-vacia-hover:before{content:"\f006"}
+
+.verde{
+    color: var(--color-verdoso-oscuro);
+}

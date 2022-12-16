@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=3.0, minimum-scale=0.5">
+    <meta name="keywords" content="influencers, empresas, colaboracion, publicidad">
+    <meta name="description" content="Date a conocer en las redes sociales o mejora tu rendimiento como empresa gracias
+    a los servicios de community manager ofrecidos por Business and Work">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../Estilos/Paginas/opiniones.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="../Scripts/jquery-3.6.0.js" type="text/javascript"></script>
+    <title>OPINIONES</title>
+</head>
+<body>
+<header class="menu cabecera" id="myTopnav">
+    <!--REFERENCIAS A PÁGINAS EXTERNAS-->
+    <div>
+        <a class="pequeño logo"><i id="ocultar" class="fa fa-camera-retro"></i></a>
+        <a class="menu" href="../index.html">INICIO</a>
+        <a class="menu" href="influencers.html">INFLUENCERS</a>
+        <a class="menu" href="empresas.html">EMPRESAS</a>
+        <a class="menu" href="noticias.html">NOTICIAS</a>
+        <a class="menu" href="consejos.html">CONSEJOS</a>
+        <a class="menuActive pequeño" href="opiniones.html">OPINIONES</a>
+    </div>
+    <div>
+        <a class="menu derecha" href="registrarse.html">REGISTRARSE</a>
+        <a class="menu derecha" href="inicioSesion.html">INICIAR SESIÓN</a>
+    </div>
+    <a class="menu pequeño icon" onclick="menuResponsivo()"><i class="fa fa-bars"></i></a>
+</header>
+<main>
+    <section class="central">
+        <div class="buscar">
+            <label>
+                <input type="text" id="nombre" placeholder=" Nombre de la empresa / usuario">
+            </label>
+            <form action="opiniones.html">
+                <a>
+                    <i class="fa fa-search"></i>
+                </a>
+            </form>
+        </div>
+    </section>
+    <section class="central">
+        <p id="carga1" class="carrusel formatoCuadro"></p>
+        <p id="carga2" class="carrusel formatoCuadro"></p>
+        <p id="carga3" class="carrusel formatoCuadro"></p>
+
+        <!-- circulos y flechas-->
+        <div>
+            <a class="flecha" onclick="anterior(0)">&#10094;</a>
+            <span class="circulo" onclick="mostrar(0,0)"></span>
+            <span class="circulo" onclick="mostrar(0,1)"></span>
+            <span class="circulo" onclick="mostrar(0,2)"></span>
+            <a class="flecha" onclick="siguiente(0)">&#10095;</a>
+        </div>
+    </section>
+    <section class="central">
+        <form action="opiniones.html">
+            <p>¿Te ha resultado útil esta información? </p>
+            <input class="boton" id="si" type="submit" value="Si, me ha servido.">
+            <input class="boton" type="submit" value="No, no me ha servido.">
+        </form>
+    </section>
+    <h2>SOBRE NOSOTROS...</h2>
+    <section class="central">
+        <div class="nosotros">
+            <div>
+                <div class="estrellas" id="op1">
+                    <a class="E uno"><i class="fa estrella-vacia"></i></a>
+                    <a class="E dos"><i class="fa estrella-vacia"></i></a>
+                    <a class="E tres"><i class="fa estrella-vacia"></i></a>
+                    <a class="E cuatro"><i class="fa estrella-vacia"></i></a>
+                    <a class="E cinco"><i class="fa estrella-vacia"></i></a>
+                </div>
+                <label>
+                    <textarea class="Cuadro">Opinión de los usuarios...</textarea>
+                </label>
+            </div>
+            <div>
+                <div class="estrellas" id="op2">
+                    <a class="E uno"><i class="fa estrella-vacia"></i></a>
+                    <a class="E dos"><i class="fa estrella-vacia"></i></a>
+                    <a class="E tres"><i class="fa estrella-vacia"></i></a>
+                    <a class="E cuatro"><i class="fa estrella-vacia"></i></a>
+                    <a class="E cinco"><i class="fa estrella-vacia"></i></a>
+                </div>
+                <label>
+                    <textarea class="Cuadro">Opinión de los usuarios...</textarea>
+                </label>
+            </div>
+            <div>
+                <div class="estrellas" id="op3">
+                    <a class="E uno"><i class="fa estrella-vacia"></i></a>
+                    <a class="E dos"><i class="fa estrella-vacia"></i></a>
+                    <a class="E tres"><i class="fa estrella-vacia"></i></a>
+                    <a class="E cuatro"><i class="fa estrella-vacia"></i></a>
+                    <a class="E cinco"><i class="fa estrella-vacia"></i></a>
+                </div>
+                <label>
+                    <textarea class="Cuadro">Opinión de los usuarios...</textarea>
+                </label>
+            </div>
+        </div>
+    </section>
+    <script src="../Scripts/menu.js"></script>
+    <script src="../Scripts/carrusel.js"></script>
+    <script src="../Scripts/estrellas.js"></script>
+    <script src="../Scripts/xmlHttpRequest.js"></script>
+</main>
+</body>
+<footer>
+    <p> ©️2022 Business and Work</p>
+</footer>
+</html>

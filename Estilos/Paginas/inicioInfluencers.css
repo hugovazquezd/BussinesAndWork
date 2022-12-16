@@ -1,0 +1,363 @@
+@import "../Formato/main.css";
+
+/* fondo */
+body {
+    background-image: url("/Imagenes/Inicio/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*************************************************************************/
+
+/* AJUSTES */
+figure {
+    width: fit-content;
+    height: auto;
+}
+
+/*************************************************************************/
+
+/** ACORDEÓN **/
+.primera {
+    text-decoration: none;
+    margin-top: 5%;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.impar {
+    background-color: var(--color-gris);
+}
+
+.par {
+    background-color: rgba(22, 116, 161, 0.40);
+}
+
+/*************************************************************************/
+
+/** AJUSTES GENERALES **/
+.Cuadro {
+    border-radius: 16px;
+    max-width: 30rem;
+    min-width: 6rem;
+    width: 34vw;
+    min-height: 1rem;
+    resize: none;
+    background: rgba(128, 128, 128, 0.38);
+    text-align: justify;
+    padding: 1vw 1vw 1vw 1vw;
+    margin-right: 1vw;
+    margin-bottom: 0;
+    font-size: 1vw;
+
+}
+
+#cambiaTam {
+    min-height: 10rem;
+}
+
+.enFila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: start;
+}
+
+.enColumna {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+}
+
+/*************************************************************************/
+
+/* AJUSTE IMAGEN */
+.nubes {
+    background-image: url("/Imagenes/Inicio/nubes.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 75%;
+}
+
+/***************************************************************************/
+
+/** OTROS AJUSTES **/
+h2 {
+    margin: 2vw 0 0 0;
+    align-self: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+#finalizada {
+    align-self: center;
+    width: 14vw;
+    min-height: 10px;
+    font-size: 1vw;
+    height: fit-content;
+}
+
+.ubicar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.eImpar {
+    font-size: 1vw;
+    background-color: var(--color-verdoso-claro);
+    padding: 22px 20vw 22px 20vw;
+    height: 100%;
+    opacity: 75%;
+}
+
+.ePar {
+    font-size: 1vw;
+    background-color: var(--color-azul-uno);
+    padding: 22px 20vw 22px 20vw;
+    height: 100%;
+    opacity: 75%;
+}
+
+.listaEmpresas {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.boton {
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    align-self: center;
+    width: 8vw;
+    min-height: 5px;
+    font-size: 1vw;
+    height: fit-content;
+}
+
+/***************************************************************************/
+
+/** RECONFIGURACIÓN DE LOS TRES BOTONES DE SOLICITUDES **/
+#ac {
+    background-color: var(--color-azul-uno);
+    margin-left: 1vw;
+}
+
+#re {
+    background-color: var(--color-verdoso-claro);
+}
+
+#ca {
+    background-color: white;
+    margin-right: 1vw;
+}
+
+/*************************************************************************/
+
+/** DESPLEGABLE RED SOCIAL **/
+.custom-select {
+    min-width: 20vw;
+    margin-left: 10px;
+    text-align: center;
+    width: 100%;
+    height: 2vw;
+    font-size: 1.1vw;
+    font-weight: 280;
+    color: #000;
+    background: white;
+    border-radius: 4px;
+}
+
+#red {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 100%;
+    height: 2vw;
+    resize: none;
+    background: var(--color-azul-uno);
+    margin-right: 1vw;
+    font-size: 0.9vw;
+    color: rgba(0, 0, 0, 0.46);
+    border: black 1px solid;
+    border-radius: 4px;
+    min-height: 10px;
+}
+
+/*************************************************************************/
+
+/** TABLA DE ESTADÍSTICAS **/
+table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 70%;
+
+}
+
+table td, table th {
+    border: 2px solid black;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: var(--color-azul-uno);
+    color: white;
+}
+
+/*************************************************************************/
+
+/** GENERALES **/
+.izda {
+    width: 50%;
+}
+
+.dcha {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.textos {
+    margin-left: 7.1vw;
+    align-self: flex-start;
+    font-size: 2vw;
+}
+
+/*************************************************************************/
+
+/** CALENDARIO **/
+.cal:hover {
+    background-color: var(--color-azul-uno);
+    border-radius: 10%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.cal {
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    width: 13.28%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+}
+
+.control {
+    align-self: center;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 2vw;
+}
+
+#anterior {
+    margin-left: 1.2vw;
+}
+
+#siguiente {
+    margin-right: 1.2vw;
+}
+
+#mes {
+    margin-left: 1vw;
+    margin-right: 0.5vw;
+    font-weight: bold;
+}
+
+#ano {
+    margin-left: 0.5vw;
+    margin-right: 1vw;
+    font-weight: bold;
+}
+
+.activo {
+    background-color: rgba(104, 255, 230, 0.56);
+    border-radius: 4px;
+}
+
+.calDato {
+    justify-self: center;
+    font-size: 2vw;
+    font-weight: lighter;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+#raya {
+    border-left: rgba(221, 221, 221, 1) solid 4px;
+}
+
+.bloque {
+    display: none;
+}
+
+.dist, .sB {
+    justify-content: space-between;
+}
+
+/**********************************************************************/
+
+/** SECCIÓN DE 4 IMÁGENES **/
+.untercio {
+    width: 33.33%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.tam:hover {
+    opacity: 80%;
+}
+
+.tam {
+    width: 100%;
+}
+
+.altoDos {
+    height: 50%;
+}
+
+.dosfotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+/********************************************************************/
+
+input[type=radio] { /** OCULTO LOS PUNTOS DEL SELECCIONABLE **/
+    display: none;
+}

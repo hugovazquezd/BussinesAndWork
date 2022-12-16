@@ -1,0 +1,65 @@
+@import "../Composiciones/menu.css";
+/*COLORES*/
+
+:root {
+    --color-blanco: rgb(250, 253, 255);
+    --color-gris: rgba(196, 196, 196, 0.4);
+    --color-azul-uno: rgba(117, 159, 190, 0.71);
+    --color-azul-dos: rgb(202, 216, 230);
+    --color-verdoso-claro: rgb(137, 180, 174);
+    --color-verdoso-oscuro: rgba(190, 212, 209, 0.8);
+}
+
+/*----Formatos----*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    color: black;
+    text-align: justify;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+h1 {
+    color: black;
+    font-size: 10vw;
+    min-font-size: 22px;
+    align-self: center;
+    opacity: 20%;
+    margin-top: 16vw;
+    margin-bottom: 18vw;
+}
+
+h2 {
+    color: black;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-left: 1vw;
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+h3 {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.boton {
+    background: var(--color-verdoso-oscuro);
+    border-radius: 12px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    border-color: rgba(0, 0, 0, 0.53);
+}
+
+footer {
+    align-self: center;
+}

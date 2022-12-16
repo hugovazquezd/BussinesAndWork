@@ -1,0 +1,49 @@
+/* SOBRE LA PÁGINA DE INICIO SE APLICAN ESTILOS EN EL TAB-PANE*/
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.enlaces.Ac {
+    background-color: rgba(196, 214, 228, 0.86);
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 30px 14px 30px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.activo {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+}
+
+.activo{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: block;
+    padding: 6px 12px;
+}
+
+.noActivo{
+    display: none;
+}

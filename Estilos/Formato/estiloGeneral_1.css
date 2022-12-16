@@ -1,0 +1,113 @@
+html {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../Imagenes/Iniciar Sesion/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    height: 100%;
+    margin: 0;
+}
+
+/* FIGURAS, CAMPOS Y OTROS ICONOS */
+.cuadro {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contCampo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.espacio {
+    top: 18vh;
+}
+
+.cuadroDesenfocado {
+    padding: 40px 60px 40px 60px;
+    /* Cuadrado Grande*/
+    background: rgba(196, 196, 196, 0.4);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenidoCuadro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.campo {
+    background: #CAD8E6;
+    border-radius: 20px;
+    height: 42px;
+    width: 300px;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    border-color: rgba(0, 0, 0, 0.53);
+}
+
+
+#aceptar {
+    background: rgba(132, 175, 208, 0.82);
+    border-radius: 12px;
+    /* LOGIN */
+    position: relative;
+    width: 120px;
+    height: 40px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    border-color: rgba(0, 0, 0, 0.53);
+    margin-top: 15px;
+}
+
+.avatar {
+    width: 55px;
+    height: 55px;
+    opacity: 60%;
+}
+
+.candado {
+    width: 40px;
+    height: 56px;
+    opacity: 60%;
+}
+
+/*********************************************************/
+
+/** SOMBREADO SOBRE CAMPOS**/
+input:hover {
+    background-color: rgba(76, 234, 248, 0.3);
+}
+
+/** TÍTULO **/
+h1 {
+    position: relative;
+    font-weight: lighter;
+    font-size: 34px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/** PIE DE PÁGINA **/
+footer {
+    justify-self: flex-end;
+}

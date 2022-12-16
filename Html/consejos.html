@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=3.0, minimum-scale=0.5">
+    <meta name="keywords" content="influencers, empresas, colaboracion, publicidad">
+    <meta name="description" content="Date a conocer en las redes sociales o mejora tu rendimiento como empresa gracias
+    a los servicios de community manager ofrecidos por Business and Work">
+    <link rel="stylesheet" href="../Estilos/Paginas/consejos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>CONSEJOS</title>
+</head>
+<body>
+<header class="menu cabecera" id="myTopnav">
+    <!--REFERENCIAS A PÁGINAS EXTERNAS-->
+    <div>
+        <a class="pequeño logo"><i id="ocultar" class="fa fa-camera-retro"></i></a>
+        <a class="menu" href="../index.html">INICIO</a>
+        <a class="menu" href="influencers.html">INFLUENCERS</a>
+        <a class="menu" href="empresas.html">EMPRESAS</a>
+        <a class="menu" href="noticias.html">NOTICIAS</a>
+        <a class="menuActive pequeño" href="consejos.html">CONSEJOS</a>
+        <a class="menu" href="opiniones.html">OPINIONES</a>
+    </div>
+    <div>
+        <a class="menu derecha" href="registrarse.html">REGISTRARSE</a>
+        <a class="menu derecha" href="inicioSesion.html">INICIAR SESIÓN</a>
+    </div>
+    <a class="menu pequeño icon" onclick="menuResponsivo()"><i class="fa fa-bars"></i></a>
+
+</header>
+<main>
+    <section class="central">
+        <div class="carrusel central">
+            <h2>TITULO DEL CONSEJO </h2>
+            <figure>
+                <img class="i" src="../Imagenes/Consejos/consejo.jpg" alt="consejos">
+            </figure>
+            <p class="formatoCuadro">
+                Dominar un tema. Está claro que no se puede ser un influencer
+                en todo. Es por eso que debes ceñirte a un tema y explotar lo que mejor se te dé.
+                Por ejemplo, el término lifestyle está muy en la palestra en la actualidad,
+                pero resulta demasiado amplio. Por lo general, los influencers de lifestyle son de moda,
+                pero de vez en cuando tocan otros temas de los que tienen menos conocimiento, como los viajes
+                (traveller) o la salud (healthy). Lo que debemos hacer es ceñirnos a hablar del tema del que
+                tenemos más conocimiento. No hay que intentar hablar un poco de todo, ya que eso resta credibilidad
+                frente a las marcas
+            </p>
+        </div>
+
+        <div class="carrusel central">
+            <h2>TITULO DEL CONSEJO </h2>
+            <figure>
+                <img class="i" src="../Imagenes/Consejos/consejo2.png" alt="consejos">
+            </figure>
+            <p class="formatoCuadro">
+                Texto aleatorio para comprobar como se ve el cambio entre un
+                artista y otro ya sí comprobar el funcionamiento del carrusel y del resto de cosas
+                de la página. Son palabras aleatorias sin ningún sentido a partir de aquí pato tigre
+                una cosa tener que comer la musica de pie.
+            </p>
+        </div>
+
+        <div class="carrusel central">
+            <h2>TITULO DEL CONSEJO </h2>
+            <figure>
+                <img class="i" src="../Imagenes/Consejos/consejo3.jpg" alt="consejos">
+            </figure>
+            <p class="formatoCuadro">
+                Una cosa para ver ya el último artista zapato
+                tigre tiburón diccionario veinte niño con una silla para sandía camión de juguete la
+                prueba va a acabar ahora es suficiente contenido para la visualización, bueno, ahora sí.
+            </p>
+        </div>
+
+        <!-- circulos y flechas -->
+        <div>
+            <a class="flecha" onclick="anterior(0)">&#10094;</a>
+            <span class="circulo" onclick="mostrar(0,0)"></span>
+            <span class="circulo" onclick="mostrar(0,1)"></span>
+            <span class="circulo" onclick="mostrar(0,2)"></span>
+            <a class="flecha" onclick="siguiente(0)">&#10095;</a>
+        </div>
+
+        <form action="consejos.html">
+            <p>¿Te ha resultado útil esta información? </p>
+            <div>
+                <input class="boton" id="si" type="submit" value="Si, me ha servido.">
+                <input class="boton" type="submit" value="No, no me ha servido.">
+            </div>
+        </form>
+
+    </section>
+</main>
+<script src="../Scripts/menu.js"></script>
+<script src="../Scripts/carrusel.js"></script>
+</body>
+<footer>
+    <p> ©️2022 Business and Work</p>
+</footer>
+</html>

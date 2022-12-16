@@ -1,0 +1,35 @@
+@import "../Formato/main.css";
+@import "../Composiciones/carrusel.css";
+
+/*HOJA PARA FORMATOS DE TEXTO, IMÁGENES Y PEQUEÑAS ADAPTACIONES */
+                /*EL RESTO DEL CONTENIDO SE HEREDA*/
+h2{
+    padding-top: 50px;
+    align-self: center;
+    opacity: 60%;
+    font-weight: lighter;
+}
+
+.i{
+    max-width: 100%;
+    min-width: 28rem;
+    width: 50vw;
+    min-height: 18rem;
+}
+
+@media screen and (min-width: 100px) and (max-width: 1215px ) {
+    .boton {
+        display: flex;
+        align-self:center;
+    }
+    h2{
+        padding-top: 0;
+    }
+}
+
+#si {
+    background-color: var(--color-verdoso-oscuro);
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+/*------------------------------------------------------------------*/

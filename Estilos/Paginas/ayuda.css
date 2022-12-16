@@ -1,0 +1,82 @@
+@import "../Formato/main.css";
+
+/*fondo*/
+body {
+    background-image: url("../../Imagenes/Inicio/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*centramos el contenido*/
+.central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.2rem;
+}
+
+/*--------CUADRO DE TEXTO--------*/
+.formatoCuadro {
+    border-radius: 16px;
+    max-width: 100%;
+    min-width: 28rem;
+    width: 45vw;
+    min-height: 22rem;
+    resize: none;
+    background: var(--color-azul-uno);
+    padding: 1vw 1vw 1vw 4vw;
+    font-size: larger;
+    margin-bottom: 2px;
+}
+
+dt {
+    font-weight: bold;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/* BOTONES */
+.boton {
+    background: #023047;
+    border-radius: 10px;
+    width: 2vw;
+    font-size: large;
+    text-align: center;
+    min-width: 200px;
+    margin-top: -60px;
+    color: white;
+}
+
+/* EFECTOS */
+.boton:hover {
+    background-color: #219EBC;
+}
+
+/* AJUSTES */
+#cambiosCuadro {
+    min-height: 180px;
+}
+
+#reajusteTitulo {
+    margin-top: -20px;
+    margin-bottom: 5%;
+}
+
+.salto {
+    padding-top: 10px;
+}
+
+.as {
+    height: 100%;
+    margin-top: 4vw;
+}
+/***********************************************************************/
+
+/* OTROS AJUSTES DE RESPONSIVIDAD */
+@media screen and (min-width: 100px) and (max-width: 600px ) {
+    #reajusteTitulo {
+        margin-top: -40px;
+    }
+}
+/***********************************************************************/

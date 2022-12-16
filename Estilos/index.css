@@ -1,0 +1,120 @@
+@import "Formato/main.css";
+@import "Composiciones/tabpane.css";
+@import "Formato/redesSociales.css";
+
+/*fondo*/
+body {
+    background-image: url("../Imagenes/Inicio/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*principal*/
+figure {
+    width: fit-content;
+    height: auto;
+}
+
+
+/*----VERSIÓN PARA PANTALLAS REDUCIDAS--*/
+@media screen and (min-width: 100px) and (max-width: 1270px ) {
+    #QuienesSomos {
+        text-decoration: none;
+        margin-top: 5%;
+    }
+
+    .enFila {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-top: 3%;
+        justify-content: center;
+    }
+
+    .cuadro {
+        border-radius: 16px;
+        background: var(--color-gris);
+        margin-top: 15px;
+        margin-bottom: 18px;
+        max-width: 70%;
+        min-width: 300px;
+    }
+
+    .imagen {
+        width: 100%;
+        height: 100%;
+        min-width: 300px;
+        max-width: 600px;
+    }
+    .f, .imagen1 { /*SE DECIDIÓ OCULTAR UNA DE LAS IMÁGENES EN LA VERSIÓN MÓVIL*/
+        display: none;
+    }
+}
+/*---------------------------------------------------------------------*/
+
+/*----VERSIÓN PARA PANTALLAS GRANDES--*/
+@media screen and (min-width: 1270px) {
+
+    #QuienesSomos {
+        text-decoration: none;
+        margin-top: -4rem;
+    }
+
+    .enFila {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-top: 6%;
+        justify-content: center;
+    }
+
+    .cuadro {
+        border-radius: 16px;
+        background: var(--color-gris);
+        max-width: 45%;
+        min-width: 30rem;
+        width: 20vw;
+        min-height: 28rem;
+    }
+
+    .imagen {
+        width: 20rem;
+        min-width: 50px;
+        max-width: 600px;
+        height: fit-content;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    #fotos {
+        min-height: 30rem;
+    }
+
+    .imagen1 {
+        width: 18rem;
+        max-width: 600px;
+        height: fit-content;
+        min-height: 28rem;
+        margin-left: -3vw;
+    }
+}
+/*---------------------------------------------------------------------*/
+
+/*ayuda*/
+#ayuda {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 60px;
+    text-decoration: none;
+}
+
+/*----REDES----*/
+.cabeceraContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

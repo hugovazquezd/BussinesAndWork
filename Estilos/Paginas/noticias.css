@@ -1,0 +1,87 @@
+@import "../Formato/main.css";
+
+.textoCuerpo {
+    font-size: 14px;
+    font-weight: lighter;
+    margin: auto;
+}
+
+#mas {
+    display: flex;
+    justify-content: center;
+}
+
+/* versión pantalla grande */
+@media screen and (min-width: 1100px ) {
+    /*EFECTOS PARA LAS IMÁGENES*/
+    img:hover {
+        transform: scale(0.8);
+    }
+
+    img {
+        overflow: hidden;
+    }
+
+    /*----------------------------------------*/
+    /*Se establecen las noticias en columna, creando agrupaciones con ayuda de un div en el HTML*/
+    .noticias {
+        display: flex;
+        flex-direction: row;
+        margin-top: 60px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    /*ADAPTACIÓN DEL TAMAÑO DE LAS IMÁGENES*/
+    #im {
+        max-width: 100%;
+        min-width: 36rem;
+        width: 18vw;
+    }
+
+    #im2, #im3 {
+        max-width: 100%;
+        min-width: 22rem;
+        width: 12vw;
+        padding-top: 2%;
+        margin-left: -18%;
+    }
+
+    #im4 {
+        margin-top: 6%;
+        max-width: 100%;
+        min-width: 20rem;
+        width: 76vw;
+    }
+
+    /*-----------------------------------------*/
+}
+
+/* versión pantalla pequeña */
+@media screen and (min-width: 100px) and (max-width: 1100px ) {
+    /*EN LA VERSIÓN PARA PANTALLAS PEQUEÑAS SE DISPONE EN UNA COLUMNA*/
+    .noticias {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mobile {
+        width: 100%;
+    }
+
+    .justificarTexto {
+        padding-left: 20px;
+    }
+
+    .elemento {
+        width: 100%;
+    }
+
+    img:hover {
+        opacity: 80%;
+    }
+}

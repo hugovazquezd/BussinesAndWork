@@ -1,0 +1,18 @@
+{
+  "eventos":[
+    {
+      "ano":"2022",
+      "mes":"Marzo",
+      "dia":"27",
+      "nombreEvento":"Subir publicación",
+      "descripcionEvento":"Subir la publicación de la empresa x"
+    },
+    {
+      "ano":"2022",
+      "mes":"Marzo",
+      "dia":"30",
+      "nombreEvento":"Sesion de fotos",
+      "descripcionEvento":"Ir a xxx a sacar fotos de estilo casual"
+    }
+  ]
+}

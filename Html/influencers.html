@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=3.0, minimum-scale=0.5">
+    <meta name="keywords" content="influencers, empresas, colaboracion, publicidad">
+    <meta name="description" content="Date a conocer en las redes sociales o mejora tu rendimiento como empresa gracias
+    a los servicios de community manager ofrecidos por Business and Work">
+    <link rel="stylesheet" href="../Estilos/Paginas/influencers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>INFLUENCERS</title>
+</head>
+<body>
+<header class="menu cabecera" id="myTopnav">
+    <!--REFERENCIAS A PÁGINAS EXTERNAS-->
+    <div>
+        <a class="pequeño logo"><i id="ocultar" class="fa fa-camera-retro"></i></a>
+        <a class="menu" href="../index.html">INICIO</a>
+        <a class="menuActive pequeño" href="influencers.html">INFLUENCERS</a>
+        <a class="menu" href="empresas.html">EMPRESAS</a>
+        <a class="menu" href="noticias.html">NOTICIAS</a>
+        <a class="menu" href="consejos.html">CONSEJOS</a>
+        <a class="menu" href="opiniones.html">OPINIONES</a>
+    </div>
+    <div>
+        <a class="menu derecha" href="registrarse.html">REGISTRARSE</a>
+        <a class="menu derecha" href="inicioSesion.html">INICIAR SESIÓN</a>
+    </div>
+    <a class="menu pequeño icon" onclick="menuResponsivo()"><i class="fa fa-bars"></i></a>
+
+</header>
+<main>
+    <h2>DESCUBRIR</h2>
+    <div class="central">
+        <div class="carrusel">
+            <a href="influencerExtendido.html">
+                <figure>
+                    <img class="foto" src="../Imagenes/Influencers/influencer1.jpg" alt="imagen influencer 1">
+                </figure>
+            </a>
+
+            <div class="informacion">
+                <h2>Nombre del influencer 1</h2>
+                <p>
+                    Explicación asociada al influencer con información de interés que este quiera hacer destacar.
+                </p>
+            </div>
+        </div>
+        <div class="carrusel">
+            <a href="influencerExtendido.html">
+                <figure>
+                    <img class="foto" src="../Imagenes/Influencers/influencer3.jpg" alt="imagen influencer 3">
+                </figure>
+            </a>
+
+            <div class="informacion">
+                <h2>Nombre del influencer 2</h2>
+                <p>
+                    Explicación asociada al influencer con información de interés que este quiera hacer
+                    destacar.
+                </p>
+            </div>
+        </div>
+        <div class="carrusel">
+            <a href="influencerExtendido.html">
+                <figure>
+                    <img class="foto" src="../Imagenes/Influencers/influencer4.jpg" alt="imagen influencer 4">
+                </figure>
+            </a>
+
+            <div class="informacion">
+                <h2>Nombre del influencer 3</h2>
+                <p>Explicación asociada al influencer con información de interés que este quiera hacer
+                    destacar.
+                </p>
+            </div>
+        </div>
+
+        <!-- circulos y flechas -->
+        <div>
+            <a class="flecha" onclick="anterior(0)">&#10094;</a>
+            <span class="circulo" onclick="mostrar(0,0)"></span>
+            <span class="circulo" onclick="mostrar(0,1)"></span>
+            <span class="circulo" onclick="mostrar(0,2)"></span>
+            <a class="flecha" onclick="siguiente(0)">&#10095;</a>
+        </div>
+    </div>
+
+    <h2>INFLUENCERS DESTACADOS</h2>
+    <div class="galeriaImagenes filaImagenes">
+        <div class="container">
+            <figure class="imagen">
+                <a href="influencerExtendido.html">
+                    <img id="imagen3" src="../Imagenes/Influencers/influencer2.jpg" alt="imagen influencer 2">
+                    <div class="overlay" id="texto1">
+                        <p class="texto">
+                            Intento de texto parte 1 para ver estructura. Así se vería
+                            si tuviese una frase real
+                        </p>
+                    </div>
+                </a>
+            </figure>
+        </div>
+        <div class="colImagenes">
+            <div class="container">
+                <figure class="imagen">
+                    <a href="influencerExtendido.html">
+                        <img id="imagen1" src="../Imagenes/Influencers/influencer3.jpg" alt="imagen influencer 3">
+                        <div class="overlay" id="texto2">
+                            <p class="texto">
+                                Desconocido usó una galería de textos y los mezcló de tal manera
+                                que logró hacer un libro de textos especimen.
+                            </p>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+            <div class="container">
+                <figure class="imagen">
+                    <a href="influencerExtendido.html">
+                        <img id="imagen2" src="../Imagenes/Influencers/influencer4.jpg" alt="imagen influencer 4">
+                        <div class="overlay" id="texto3">
+                            <p class="texto">
+                                Lorem Ipsum es simplemente el texto de relleno
+                                de las imprentas y archivos de texto. Lorem.
+                            </p>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="../Scripts/menu.js"></script>
+<script src="../Scripts/carrusel.js"></script>
+</body>
+<footer>
+    <p> ©️2022 Business and Work</p>
+</footer>
+</html>
