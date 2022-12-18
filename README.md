@@ -6,7 +6,7 @@ La realización de este proyecto web ha sido orquestada por Andrea Solla Alfons�
 El desarrollo de esta tarea requerida en la asignatura de Desarrollo de Aplicaciones Web se basa en el aprendizaje de algunas de las principales herramientas asociadas al desarrollo web; así como la integración de distintas tecnologías.
 
 ## Herramientas y lenguajes utilizados
-Gracias a esta práctica se han desarrollado habilidades con herramientas como Figma (para el proceso de diseño) y WebStorm (para la codificación). Además, se ha podido gestionar la integración del sitio web desarrollado en servidores como Tomcat o  Apache.
+Gracias a esta práctica se han desarrollado habilidades con herramientas como Figma (para el proceso de diseño) y WebStorm (para la codificación). Además, se ha podido gestionar la integración del sitio web desarrollado en servidores como Tomcat o  Apache HTTP Server.
 
 Las principales herramientas y lenguajes empleados han sidos:
 1. HTML5
